@@ -1,6 +1,4 @@
 import socket
-import sys
-import time
 s = socket.socket()
 host = socket.gethostname()
 print("Server will start on host:",host)
