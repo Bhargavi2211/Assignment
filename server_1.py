@@ -12,7 +12,7 @@ conn, addr = s.accept()
 print(addr, "Has connected to server and online")
 
 while True:
-    message = input(str(">> "))
+    message = input(str(""))
     message = message.encode()
     conn.send(message)
     print("Message has been sent")
