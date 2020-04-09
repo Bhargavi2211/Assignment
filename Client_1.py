@@ -1,7 +1,4 @@
 import socket
-import sys
-import time
-
 s = socket.socket()
 host = input(str("Please enter hostname of server:"))
 port = 2606
@@ -13,7 +10,7 @@ while True:
     incoming_message = s.recv(1024)
     incoming_message = incoming_message.decode()
     print("Server:", incoming_message)
-    message = input(str(">> "))
+    message = input(str(""))
     message = message.encode()
     s.send(message)
     print("Message has been sent")
