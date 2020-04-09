@@ -2,9 +2,7 @@ import socket
 s = socket.socket()
 host = input(str("Please enter hostname of server:"))
 port = 2606
-
 s.connect((host, port))
-
 print("Connect to chat server")
 while True:
     incoming_message = s.recv(1024)
